@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <!--Order of Code matters-->
+
 <body>
-    
+
     <h1>React will only works inside div id=root. This will show.</h1>
     <div id="root">
         <h1>Will get replaced by the parent</h1>
@@ -18,10 +19,14 @@
     <div id="head2"></div>
     <div id="head3"></div>
     <h1>Will also work since it's outside root.</h1>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--core-->
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
-    </script> <!--library useful for DOM operations-->
-    <script src="./App.js"></script>
+    <!--<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>--><!--core-->
+    <!--<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    </script> --> <!--library useful for DOM operations-->
+    <script type="module" src="./App.js"></script>
 </body>
 
 </html>
+
+<!--CDN links are not a good way to include packages.(Too much usage)
+will call the link every time and when version changes, we'll have to change the link
+as well. -->
