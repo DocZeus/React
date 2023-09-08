@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<!--Order of Code matters-->
+<body>
+    
+    <h1>React will only works inside div id=root. This will show.</h1>
+    <div id="root">
+        <h1>Will get replaced by the parent</h1>
+    </div>
+    <div id="head1"></div>
+    <div id="head2"></div>
+    <div id="head3"></div>
+    <h1>Will also work since it's outside root.</h1>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--core-->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    </script> <!--library useful for DOM operations-->
+    <script src="./App.js"></script>
+</body>
+
+</html>
