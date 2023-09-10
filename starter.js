@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello World! from React");
+const heading = React.createElement("h1", { id: "heading" }, "Hello World! from React"); //core of react
 //{} this is the place to give attributes 
 //props are attributes({}) and children(message)
 console.log(heading); //object
@@ -106,4 +106,9 @@ Lastly, end user will see it.
 
 browserslist.dev, to make support in older browsers, configure package.json.
 Add "browserslist".
-*/
+
+Creating a script instead of writing npx parcel index.html.
+Script will be in package.json, see scripts. Write the command except npx that you want
+to execute. Wrote a script for dev and production build.
+
+Now to execute, just write npm run start/npm start or npm run build. */
